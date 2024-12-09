@@ -1,0 +1,127 @@
+// FONT IMPORT
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 800
+
+@mixin plus-jakarta-sans-extra-bold {
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 800;
+	font-style: normal;
+};
+
+@mixin plus-jakarta-sans-bold {
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+};
+
+@mixin plus-jakarta-sans-medium {
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+};
+
+// COLORS
+$c-blue900: #13183F;
+$c-blue600: #666CA3;
+
+$c-pink600: #F74780;
+$c-pink300: #FFA7C3;
+
+$c-grey: #83869A;
+
+$c-white: #fff;
+
+$g-pink: linear-gradient(to bottom, #FF6F48, #F02AA6 );
+$g-purple: linear-gradient(to bottom, #4851FF, #F02AA6);
+$g-grey: linear-gradient(to bottom, #fff, #f0f1ff);
+
+// TYPO DESKTOP
+@mixin desktopTextPreset1 {
+	@include plus-jakarta-sans-extra-bold();
+	font-size: 56px;
+	line-height: 120%;
+	font-weight: bold;
+}
+
+@mixin desktopTextPreset2 {
+	@include plus-jakarta-sans-extra-bold();
+	font-size: 40px;
+	line-height: 120%;
+	font-weight: bold;
+}
+
+@mixin desktopTextPreset3 {
+	@include plus-jakarta-sans-extra-bold();
+	font-size: 32px;
+	line-height: 120%;
+	font-weight: bold;
+}
+
+@mixin desktopTextPreset4 {
+	@include plus-jakarta-sans-extra-bold();
+	font-size: 24px;
+	line-height: 120%;
+	font-weight: bold;
+}
+
+@mixin desktopTextPreset5 {
+	@include plus-jakarta-sans-medium();
+	font-size: 18px;
+	line-height: 150%;
+	font-weight: medium;
+}
+
+@mixin desktopTextPreset6 {
+	@include plus-jakarta-sans-bold();
+	font-size: 16px;
+	line-height: 150%;
+	font-weight: bold;
+}
+
+@mixin desktopTextPreset7 {
+	@include plus-jakarta-sans-bold();
+	font-size: 18px;
+	line-height: 150%;
+	font-weight: bolder;
+}
+
+// TYPO MOBILE-TABLET
+@mixin mobileTextPreset1 {
+	@include plus-jakarta-sans-extra-bold();
+	font-size: 40px;
+	line-height: 120%;
+	font-weight: bolder;
+}
+
+@mixin mobileTextPreset2 {
+	@include plus-jakarta-sans-extra-bold();
+	font-size: 32px;
+	line-height: 120%;
+	font-weight: bolder;
+}
+
+@mixin mobileTextPreset3 {
+	@include plus-jakarta-sans-extra-bold();
+	font-size: 24px;
+	line-height: 120%;
+	font-weight: bolder;
+}
+
+@mixin mobileTextPreset4 {
+	@include plus-jakarta-sans-extra-bold();
+	font-size: 20px;
+	line-height: 120%;
+	font-weight: bold;
+}
+
+@mixin mobileTextPreset6 {
+	@include plus-jakarta-sans-bold();
+	font-size: 14px;
+	line-height: 120%;
+	font-weight: bold;
+}
