@@ -1,6 +1,5 @@
 @import './variables.scss';
 :root {
-	margin: 20px;
 	overflow-x: hidden;
 }
 
@@ -12,7 +11,7 @@
 button {
 	@include desktopTextPreset7;
 	width: 168px;
-	height: 59px;
+	height: 57px;
 	border-radius: 28px;
 	border: 0;
 	background-color: $c-blue900;
@@ -22,6 +21,7 @@ button {
 body{ 
 
 	nav {
+		padding: 20px;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -61,7 +61,9 @@ body{
 	}
 
 	main {
+		padding: 0 	20px;
 		background: $g-grey;
+		padding-bottom: 80px;
 		.action-call {
 			@include mobileTextPreset3();
 			background: $g-pink;
@@ -75,15 +77,103 @@ body{
 		}
 
 		.card {
+			background-color: $c-white;
+			margin-top: 64px;
+			padding: 64px 32px 40px 32px;
+			position: relative;
+			border-radius: 15px;
 
-			margin-top: 32px;
+			img {
+				position: absolute;
+				top: -32px;
+			}
+
 			h2 {
-				margin-top: 64px; 
+				@include mobileTextPreset4();
 			}
 
 			p {
+				@include desktopTextPreset6();
+				color: $c-grey;
 				margin: 24px 0 ;
+			}
+
+			a {
+				@include desktopTextPreset7();
+				color: $c-pink600;
+			}
+		}
+	}
+
+	footer {
+		background-color: $c-blue900;
+		padding: 24px 20px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		img {
+			height: 100%;
+		}
+
+		button {
+			background: $g-purple;
+			width: 152px;
+			height: 48px;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+
+	body{
+		main {
+			padding: 44px;
+			.hero{
+				margin-top: 0;
+				position: relative;
+				flex-direction: row;
+				height: 528px;
+				align-items: center;
+				.text-content{
+					width: 40%;
+				}
+	
+				img {
+					position: absolute;
+					height: 800px;
+					width: auto;
+					top: -280px;
+					right: -380px;
+				}
 			}
 		}
 	}
 }
+
+// @media screen and (min-width: 1440px) {
+
+// 	body{
+// 		main {
+// 			padding: 44px;
+// 			.hero{
+// 				margin-top: 0;
+// 				position: relative;
+// 				flex-direction: row;
+// 				height: 528px;
+// 				align-items: center;
+// 				.text-content{
+// 					width: 40%;
+// 				}
+	
+// 				img {
+// 					position: absolute;
+// 					height: 1046px;
+// 					width: 1138px;
+// 					top: -300px;
+// 					right: -390px;
+// 				}
+// 			}
+// 		}
+// 	}
+// }

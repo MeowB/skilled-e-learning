@@ -7,7 +7,7 @@ function Card({imgUrl, title, content}) {
 				<img src={imgUrl} alt="icon" />
 				<h2>{title}</h2>
 				<p>{content}</p>
-				<a href="#">get Started</a>
+				<a href="#">Get Started</a>
 			</div>
 		</>
 	)

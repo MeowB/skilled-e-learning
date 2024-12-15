@@ -3,18 +3,18 @@ import './styles/app.scss'
 import NavBar from './components/navBar'
 import Hero from './components/hero'
 import Card from './components/card'
+import logo from './assets/logo-light.svg'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-	<header>
-		<NavBar />
-	</header>
-	<body>
-		<Hero />
+	<>
+		<header>
+			<NavBar />
+		</header>
 		<main>
+			<Hero />
 			<div className="action-call">
 				<p>Check out our most popular courses</p>
 			</div>
@@ -44,8 +44,12 @@ function App() {
 				content={'A step-by-step playbook to help you start, scale, and sustain your business without outside investment.'}
 			/>
 		</main>
-	</body>
-    </>
+
+		<footer>
+			<img src={logo} alt="logo" />
+			<button>Get Started</button>
+		</footer>
+	</>
   )
 }
 

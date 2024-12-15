@@ -45,28 +45,24 @@ $g-grey: linear-gradient(to bottom, #fff, #f0f1ff);
 	@include plus-jakarta-sans-extra-bold();
 	font-size: 56px;
 	line-height: 120%;
-	font-weight: bold;
 }
 
 @mixin desktopTextPreset2 {
 	@include plus-jakarta-sans-extra-bold();
 	font-size: 40px;
 	line-height: 120%;
-	font-weight: bold;
 }
 
 @mixin desktopTextPreset3 {
 	@include plus-jakarta-sans-extra-bold();
 	font-size: 32px;
 	line-height: 120%;
-	font-weight: bold;
 }
 
 @mixin desktopTextPreset4 {
 	@include plus-jakarta-sans-extra-bold();
 	font-size: 24px;
 	line-height: 120%;
-	font-weight: bold;
 }
 
 @mixin desktopTextPreset5 {
@@ -80,7 +76,6 @@ $g-grey: linear-gradient(to bottom, #fff, #f0f1ff);
 	@include plus-jakarta-sans-bold();
 	font-size: 16px;
 	line-height: 150%;
-	font-weight: bold;
 }
 
 @mixin desktopTextPreset7 {
@@ -116,12 +111,10 @@ $g-grey: linear-gradient(to bottom, #fff, #f0f1ff);
 	@include plus-jakarta-sans-extra-bold();
 	font-size: 20px;
 	line-height: 120%;
-	font-weight: bold;
 }
 
 @mixin mobileTextPreset6 {
 	@include plus-jakarta-sans-bold();
 	font-size: 14px;
 	line-height: 120%;
-	font-weight: bold;
 }
